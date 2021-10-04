@@ -5,8 +5,8 @@ const mailGun = require('nodemailer-mailgun-transport');
 
 const auth = {
     auth: {
-        api_key: 'f7455c876102bde6a0fee85bb8697778-443ec20e-6e12750e', // TODO: Replace with your mailgun API KEY
-        domain:  'sandboxcd5016d23c804f428cf007e925c34fc7.mailgun.org' // TODO: Replace with your mailgun DOMAIN
+        api_key: '', // TODO: Replace with your mailgun API KEY
+        domain:  '' // TODO: Replace with your mailgun DOMAIN
     }
 };
 
@@ -18,7 +18,7 @@ const transporter = nodemailer.createTransport(mailGun(auth));
 const sendMail = (email, subject, text, cb) => {
     const mailOptions = {
         from: email,// 'derekprat37@gmail.com', // TODO replace this with your own email
-        to: 'derekprates37@gmail.com', // TODO: the receiver email has to be authorized for the free tier
+        to: '', // TODO: the receiver email has to be authorized for the free tier
         subject,//subject: subject,//'Testing',
         text//text: text//'I would like to get in touch with you'
     };

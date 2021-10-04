@@ -5,7 +5,7 @@ const log = console.log;
 const app = express();
 const path = require('path');
     
-const PORT = 8080;
+const PORT = 3000;
 
 
 // DARTA PARSING to get the data here when i client send the data and i able to process it  
@@ -39,4 +39,4 @@ app.get('/', (req, res)=>{
 
     res.sendFile(path.join(__dirname,'views','index.html'));
 });
-app.listen(PORT, ()=> {log('Server is starting on PORT, ', 8080)});
+app.listen(PORT, ()=> {log('Server is starting on PORT, ', 3000)});
